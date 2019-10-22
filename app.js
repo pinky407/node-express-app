@@ -18,24 +18,21 @@ const port = process.env.PORT || config.get("port");
 
 // declare your callback function the old way
 app.get('/', function (req, res) {
-  res.send('Welcome to the default page!  <br> <br>' +
-    'Try going to different URIs by adding these at the end: <br> <br>' +
-    '/hello <br>' +
-    '/big <br>' +
-    '/json <br>' +
-    '/greeting/yourname <br>' +
-    '/yo/Dr.Rogers <br>' +
-    '/fortune <br>' +
-    '/fancy/?first=Denise&last=Case <br>' +
+  res.send('Welcome to My Page!  <br> <br>' +
+    ' Follow me <br> <br>' +
+    ' <a href="https://www.facebook.com/priyanka.bodapati?ref=bookmarks">Facebook</a> <br>' +
+    ' <a href="https://www.instagram.com/priyanka.bodapati/">Instagram</a>  <br>' +
+    ' <a href="https://github.com/pinky407">Github</a>  <br>' +
     '<br> <br>' +
-    'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
+
+    'Fork the source code from <a href="https://github.com/pinky407/node-express-app">https://github.com/pinky407/node-express-app</a>'
   )
 })
 
 // or use the new arrow function syntax
 // respond with text
 app.get('/hello', (req, res) => {
-  res.send('Hello World!')
+  res.send('<img src="Favourite-img.JPG" style="width:100%">')
 })
 
 // or respond with html
